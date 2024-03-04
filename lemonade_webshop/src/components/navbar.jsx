@@ -1,13 +1,19 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {ShoppingCart} from "phosphor-react";
+import logo from "../assets/billeder/logo.png";
 import "./navbar.css";
 
 export const Navbar = () => {
     return (
     <div className="navbar">
+        <div className="logo">
+            <img src={logo} alt="Logo" />
+        </div>
+
         <div className="links" >
-            <Link to="/">Shop</Link>
+            <Link to="/">Home</Link>
+            <Link to="/shop">Shop</Link>
             <Link to="/cart"> 
 
                 {" "}

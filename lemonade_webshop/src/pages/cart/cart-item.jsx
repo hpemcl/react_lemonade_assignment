@@ -15,12 +15,13 @@ export const CartItem = (props) => {
         </p>
         <p> Price: ${price}</p>
         <div className="countHandler">
-          <button onClick={() => removeFromCart(id)}> - </button>
+          <button className="buttonRemove" onClick={() => removeFromCart(id)}> - </button>
           <input
+            className="customInput"
             value={cartItems[id]}
             onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
           />
-          <button onClick={() => addToCart(id)}> + </button>
+          <button className="buttonAdd" onClick={() => addToCart(id)}> + </button>
         </div>
       </div>
     </div>
