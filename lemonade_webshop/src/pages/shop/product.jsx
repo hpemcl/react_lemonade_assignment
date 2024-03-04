@@ -5,15 +5,14 @@ export const Product = (props) => {
 
     return (
     <div className="product"> 
-    
-    <img src="{productImage}" />
+        <img src="{productImage}" />
         <div className="description">
             <p> 
                 <b> {productName} </b>  
             </p>
             <p> ${price} </p>
         </div>
-
+        <button className="addToCartBttn"> Add To Cart</button>
     </div>
     );
 };
