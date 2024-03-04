@@ -4,19 +4,17 @@ import { Product } from "./product";
 import "./shop.css";
 
 export const Shop = () => {
-    return (
+  return (
     <div className="shop">
-        <div className="shopTitle">
-            <h1>Lemonade Shop</h1>
-        </div>
-        <div className="products">
-            
-        </div>
-        <div className="products">
-            {PRODUCTS.map((product) => (
-            <Product data={product}/>
+      <div className="shopTitle">
+        <h1>PedroTech Shop</h1>
+      </div>
+
+      <div className="products">
+        {PRODUCTS.map((product) => (
+          <Product data={product} />
         ))}
-        </div>
+      </div>
     </div>
-    );
+  );
 };
