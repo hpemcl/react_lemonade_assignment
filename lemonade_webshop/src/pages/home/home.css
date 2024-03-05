@@ -1,0 +1,35 @@
+.logo img {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+.logo {
+    margin-right: auto;
+}
+
+.first-section{
+    background-color: bisque;
+    margin-top: 0;
+    padding: 20px 20px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-title{
+    margin-top: 0;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.first-section-logo img{
+    height: auto;
+    width: 150px;
+
+}
+
+.firstLogo{
+    margin-top: 25px;
+}
