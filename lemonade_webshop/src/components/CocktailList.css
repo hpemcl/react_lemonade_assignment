@@ -1,0 +1,42 @@
+.cocktail-list-item {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cocktail-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.cocktail-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.cocktail-price {
+  font-size: 1rem;
+  color: #666;
+}
+
+.buy-button {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.buy-button:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}

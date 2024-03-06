@@ -1,25 +1,28 @@
-import React from "react";
-import {Link} from "react-router-dom";
-import {ShoppingCart} from "phosphor-react";
-import logo from "../assets/billeder/logo.png";
-import "./navbar.css";
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { ShoppingCart } from 'phosphor-react';
+import { ShopContext } from "../context/shop-context";
+import logo from '../assets/billeder/logo.png';
+import './navbar.css';
 
-export const Navbar = () => {
-    return (
+const Navbar = () => {
+  const { cartItems } = useContext(ShopContext);
+
+  return (
     <div className="navbar">
-        <div className="logo">
-            <img src={logo} alt="Logo" />
-        </div>
-
-        <div className="links" >
-            <Link to="/">Home</Link>
-            <Link to="/shop">Shop</Link>
-            <Link to="/cart"> 
-
-                {" "}
-                <ShoppingCart size={32}/> 
-            </Link>
-        </div>
+      <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/shop">Shop</Link>
+        <Link to="/cart" className="cart-link">
+          <ShoppingCart size={32} />
+          {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
+        </Link>
+      </div>
     </div>
-    );
+  );
 };
+
+export default Navbar;

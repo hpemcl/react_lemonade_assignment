@@ -1,7 +1,7 @@
-import React from "react";
-import { PRODUCTS } from "../../products";
-import { Product } from "./product";
+import React, { useState, useEffect } from "react";
 import "./shop.css";
+import CocktailList from "../../components/cocktailList";
+
 
 export const Shop = () => {
   return (
@@ -9,12 +9,14 @@ export const Shop = () => {
       <div className="shopTitle">
         <h1>Lemonade Shop</h1>
       </div>
+      <CocktailList />
 
-      <div className="products">
-        {PRODUCTS.map((product) => (
-          <Product data={product} />
-        ))}
-      </div>
+      <footer className="footer">
+        Lavet af Hannah Clausen | React Webshop App
+      </footer>
     </div>
   );
 };
+
+
+

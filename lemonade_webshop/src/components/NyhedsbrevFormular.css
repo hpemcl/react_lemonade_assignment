@@ -1,0 +1,46 @@
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    
+  }
+
+  .label-text{
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+
+  }
+  
+  .submit-button {
+    background-color: white;
+    padding: 10px 183px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: bisque;
+    border: none;
+  }
+  
+
+h2{
+    text-align: center;
+}
