@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
+import { useNavigate } from "react-router-dom";
+import "./cart.css";
 
-export const CartItem = ({ data }) => {
+export const CartItem = ({ data, removeFromCart }) => {
   const { idDrink, strDrink, strDrinkThumb, price } = data;
-  const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
+  const { cartItems, addToCart } = useContext(ShopContext); // Tilføj cartItems og addToCart her
+  const navigate = useNavigate();
 
   const handleAddToCart = () => {
-    const currentCount = cartItems[idDrink];
-    addToCart(data, currentCount + 1); // Tilføj en drink til kurven med det nuværende antal plus 1
+    addToCart(data);
   };
 
   return (

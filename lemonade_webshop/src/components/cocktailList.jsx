@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import "./CocktailList.css";
+import "./CocktailList.css"; // Importer CSS-filen
 import { ShopContext } from "../context/shop-context";
 
 const CocktailList = () => {
@@ -8,7 +8,6 @@ const CocktailList = () => {
 
   const handleAddToCart = (cocktail) => {
     addToCart(cocktail);
-
   };
 
   useEffect(() => {
@@ -38,7 +37,7 @@ const CocktailList = () => {
             <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} className="cocktail-image" />
             <h3 className="cocktail-name">{cocktail.strDrink}</h3>
             <p className="cocktail-price">${cocktail.price}</p>
-            <button className="buy-button" onClick={() => handleAddToCart(cocktail)}>Køb</button>
+            <button className="buy-button" onClick={() => handleAddToCart(cocktail)}>Buy</button>
           </li>
         ))}
       </ul>

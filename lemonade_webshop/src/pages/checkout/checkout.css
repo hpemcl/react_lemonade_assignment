@@ -1,0 +1,196 @@
+/* Generelle stilarter */
+body {
+    background-color: bisque;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-summary,
+.totalAmount,
+.payment-details {
+    border-radius: 15px;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.order-summary h3,
+.payment-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.order-summary img,
+.checkout-image {
+    width: 100px;
+    border-radius: 10px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item div {
+    margin-left: 10px;
+}
+
+.cart-item-name{
+    font-size: 20px;
+    font-weight:bold;
+    margin: 5px 0;
+}
+
+.cart-item-quantity{
+    font-size: 15px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.cart-item-price{
+    font-size: 15px;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.totalAmount p {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.checkout-button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.checkout-button:hover {
+    background-color: bisque;
+    border: none;
+}
+
+.payment-details {
+    border-radius: 15px;
+    width: 50%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .payment-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .payment-details input[type="text"],
+  .payment-details input[type="number"],
+  .payment-details input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .payment-details input[type="text"]:focus,
+  .payment-details input[type="number"]:focus,
+  .payment-details input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+
+/* Medieforespørgsler */
+@media screen and (max-width: 768px) {
+    .order-summary,
+    .totalAmount {
+        width: 90%;
+    }
+
+    .payment-details {
+        width: 80%;
+      }
+}
+
+@media screen and (max-width: 576px) {
+    .order-summary,
+    .totalAmount,
+    .payment-details {
+        width: 80%;
+    }
+
+    .totalAmount p {
+        text-align: center;
+    }
+
+    .checkout-container h2{
+        font-size: 40px;
+    }
+
+    .order-summary li {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: left;
+        align-content: flex-start;
+    }
+
+    .order-summary img,
+    .checkout-image {
+       width: 90%;     
+       align-content: center;
+    }
+
+    .cart-item div {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    
+
+    .cart-item-name{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+
+    .cart-item-quantity{
+        font-size: 20px;
+        margin-top: 10px;
+        font-style: italic;
+    }
+
+    .cart-item-price{
+        font-size: 20px;
+        font-style: italic;
+        margin: 5px 0;
+    }
+    
+}

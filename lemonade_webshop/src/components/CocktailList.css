@@ -1,42 +1,81 @@
+body{
+  background-color: bisque;
+}
+
+.cocktail-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .cocktail-list-item {
   border-radius: 15px;
-  width: 100%;
-  max-width: 300px;
+  width: calc(25% - 20px);
+  margin: 10px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .cocktail-image {
   width: 100%;
   max-width: 250px;
+  max-height: 250px;
   height: auto;
+  margin-top: 20px;
 }
 
 .cocktail-name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
+  text-transform: uppercase;
+  max-width: 250px;
+  text-align: center;
 }
 
 .cocktail-price {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
 }
 
 .buy-button {
-  background-color: transparent;
-  border: 2px solid rgb(19, 19, 19);
+  background-color: black;
   min-width: 100px;
   padding: 5px 10px;
   border-radius: 15px;
+  color: white;
 }
 
 .buy-button:hover {
-  background-color: rgb(19, 19, 19);
-  color: white;
+  background-color: bisque;
+  color: black;
   cursor: pointer;
+  padding: 8px 10px;
+  border: none;
+  font-weight: 900;
+}
+
+.footer{
+  margin-top: 0;
+}
+
+/* Medieforespørgsler */
+@media screen and (max-width: 768px) {
+  .cocktail-list-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cocktail-list-item {
+    width: calc(80% - 20px);
+  }
 }

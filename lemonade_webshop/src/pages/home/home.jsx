@@ -32,6 +32,10 @@ export const Home = () => {
             <Nyhedsbrev />
         </div>
         
+
+        <footer className="footer">
+        Lavet af Hannah Clausen | React Webshop App
+      </footer>
       </div>
 
         

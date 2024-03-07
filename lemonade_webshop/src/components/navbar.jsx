@@ -10,9 +10,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="logo">
+    <div className="logo">
+      <Link to="/">
         <img src={logo} alt="Logo" />
-      </div>
+      </Link>
+    </div>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>

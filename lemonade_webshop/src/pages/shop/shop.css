@@ -35,6 +35,6 @@ button:hover, .cartBttn:hover{
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
   .shopTitle {
-    font-size: 24px;
+    font-size: 20px;
   }
 }

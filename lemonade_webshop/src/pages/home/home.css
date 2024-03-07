@@ -1,13 +1,14 @@
+/* Standard styling */
 .logo img {
-    width: 100px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px; /* Justér bredden af logoet efter behov */
+    height: auto; /* Behold aspektforhold */
   }
-
-.logo {
-    margin-right: auto;
-}
-
-.first-section{
+  
+  .logo {
+    margin-right: auto; /* Justér afstanden til højre */
+  }
+  
+  .first-section {
     background-color: bisque;
     margin-top: 0;
     padding: 20px 20px;
@@ -16,44 +17,42 @@
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-}
-
-.title{
+  }
+  
+  .title {
     margin-top: 150px;
-}
-
-.first-title{
+  }
+  
+  .first-title {
     margin-top: 0;
     font-style: italic;
     font-weight: 400;
     font-size: 90px;
     text-align: center;
-
-}
-
-.second-title{
+  }
+  
+  .second-title {
     margin-top: 0;
     font-style: italic;
     font-weight: 400;
     font-size: 90px;
     text-align: center;
-}
-
-.first-section-logo img{
+  }
+  
+  .first-section-logo img {
     height: auto;
     width: 150px;
-
-}
-
-.firstLogo{
+  }
+  
+  .firstLogo {
     margin-top: 25px;
-}
-
-.buttonShopSection{
+  }
+  
+  .buttonShopSection {
     margin-top: 50px;
-}
-
-.buttonShop{
+  }
+  
+  .buttonShop {
     padding: 15px 50px;
     background-color: black;
     color: white;
@@ -61,15 +60,15 @@
     font-size: 20px;
     border-radius: 10px;
     font-weight: bold;
-}
-
-.buttonShop:hover{
+  }
+  
+  .buttonShop:hover {
     background-color: white;
     color: black;
     border: white;
-}
-
-.second-section{
+  }
+  
+  .second-section {
     background-color: rgb(141, 114, 81);
     margin-top: 0;
     padding: 20px 20px;
@@ -79,4 +78,34 @@
     flex-direction: column;
     align-items: center;
     color: white;
-}
+  }
+  
+  /* Responsivt layout med media queries */
+  @media screen and (max-width: 768px) {
+
+    .title {
+      margin-top: 50px; 
+    }
+  
+    .first-title,
+    .second-title {
+      font-size: 50px; 
+    }
+  
+    .first-section-logo {
+      width: 100%; 
+      text-align: center;
+  
+    }
+
+    .buttonShopSection {
+      margin-top: 20px; 
+    }
+  
+    .buttonShop {
+      padding: 10px 30px; 
+      font-size: 16px; 
+    }
+
+  }
+  
