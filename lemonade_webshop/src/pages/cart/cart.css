@@ -122,6 +122,7 @@ body{
       text-align: center;
       height: auto;
       padding: 20px;
+      margin-bottom: 10px;
     }
   
     .cartItem img {
@@ -138,10 +139,11 @@ body{
   
     .checkout {
       text-align: center; /* Center buttons on mobile */
+      margin-left: 0;
     }
   
     .checkout button {
-      width: 100%;
+      width: 80%;
       height: 50px;
       background-color: rgb(19, 19, 19);
       color: white;
@@ -150,5 +152,14 @@ body{
       margin: 10px auto; /* Center buttons horizontally */
       cursor: pointer;
     }
+
+    .subtotal{
+      width: 70%;
+      border-radius: 10px;
+      font-size: 18px;
+      margin-top: 10px;
+      
+    }
+    
   }
   
