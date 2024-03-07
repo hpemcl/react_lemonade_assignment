@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../../context/shop-context';
+import { useNavigate } from "react-router-dom"; 
 import './checkout.css';
 
 export const Checkout = () => {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
+  const navigate = useNavigate(); // Initialize useNavigate
 
   return (
     <div className="checkout-container">
@@ -33,7 +35,7 @@ export const Checkout = () => {
           <h3>Payment Details</h3>
           <div>
             <label htmlFor="cardNumber">Card Number:</label>
-            <input type="text" id="cardNumber" name="cardNumber" />
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="3218 xxxx xxxx xxxx" />
           </div>
           <div>
             <label htmlFor="expiryDate">Expiry Date:</label>
@@ -41,10 +43,10 @@ export const Checkout = () => {
           </div>
           <div>
             <label htmlFor="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" />
+            <input type="text" id="cvv" name="cvv" placeholder="345" />
           </div>
         </div>
-      <button className="checkout-button">Place Order</button>
+        <button className="checkout-button" onClick={() => navigate("/placeOrder")}>Place Order</button>
     </div>
   );
 };

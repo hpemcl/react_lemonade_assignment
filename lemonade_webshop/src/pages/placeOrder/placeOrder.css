@@ -1,0 +1,82 @@
+.place-order-container {
+    margin: 5% auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .place-order-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .place-order-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: row;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  
+  /* Responsivt layout med media queries */
+  @media screen and (max-width: 768px) {
+    .place-order-container {
+      width: 80%;
+      padding: 10px;
+      margin: 10% auto;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+
+    .button{
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+
+    .place-order-container h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      
+      .place-order-container p {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+  }

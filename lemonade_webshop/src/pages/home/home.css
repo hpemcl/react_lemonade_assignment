@@ -1,4 +1,9 @@
 /* Standard styling */
+.body{
+  height: auto;
+
+}
+
 .logo img {
     width: 100px; /* Justér bredden af logoet efter behov */
     height: auto; /* Behold aspektforhold */
@@ -12,7 +17,7 @@
     background-color: bisque;
     margin-top: 0;
     padding: 20px 20px;
-    height: 80vh;
+    height: 50vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -70,9 +75,9 @@
   
   .second-section {
     background-color: rgb(141, 114, 81);
-    margin-top: 0;
+    margin-top: 20px;
     padding: 20px 20px;
-    height: 25vh;
+    max-height: 25vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -80,7 +85,8 @@
     color: white;
   }
   
-  /* Responsivt layout med media queries */
+
+
   @media screen and (max-width: 768px) {
 
     .title {

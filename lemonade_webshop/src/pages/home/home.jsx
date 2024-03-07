@@ -26,6 +26,8 @@ export const Home = () => {
               Shop Now
             </button>
           </div>
+
+          
         </div>
 
         <div className="second-section">
@@ -36,6 +38,7 @@ export const Home = () => {
         <footer className="footer">
         Lavet af Hannah Clausen | React Webshop App
       </footer>
+
       </div>
 
         
