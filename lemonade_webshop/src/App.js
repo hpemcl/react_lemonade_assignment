@@ -1,7 +1,8 @@
+// App.js
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/navbar";
+import AdminPage from "./pages/adminPage/adminPage"; // 
 import { Shop } from "./pages/shop/shop";
 import { Cart } from "./pages/cart/cart";
 import { Checkout } from "./pages/checkout/checkout";
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/placeOrder" element={<PlaceOrder />} />
+            <Route path="/adminPage" element={<AdminPage />} /> 
           </Routes>
           
         </Router>

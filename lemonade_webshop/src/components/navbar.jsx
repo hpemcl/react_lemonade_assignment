@@ -18,10 +18,12 @@ const Navbar = () => {
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
+        <Link to="/adminPage">Log ind</Link>
         <Link to="/cart" className="cart-link">
           <ShoppingCart size={32} />
           {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
         </Link>
+        
       </div>
     </div>
   );

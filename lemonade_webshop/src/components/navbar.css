@@ -29,4 +29,17 @@ body{
 }
 
 
+@media only screen and (max-width: 480px) {
+    .links a{
+        font-size: 15px;
+    }
 
+    .links {
+        margin-right: 50px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+}

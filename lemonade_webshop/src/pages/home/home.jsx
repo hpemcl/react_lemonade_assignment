@@ -29,15 +29,15 @@ export const Home = () => {
 
           
         </div>
-
+        
         <div className="second-section">
             <Nyhedsbrev />
         </div>
         
 
         <footer className="footer">
-        Lavet af Hannah Clausen | React Webshop App
-      </footer>
+          Lavet af Hannah Clausen | React Webshop App
+        </footer>
 
       </div>
 
